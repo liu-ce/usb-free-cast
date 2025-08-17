@@ -1,0 +1,28 @@
+{
+  "name": "mobile-control-frontend",
+  "version": "1.0.0",
+  "description": "Mobile Control System Frontend",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "axios": "^0.27.2",
+    "element-ui": "^2.15.9"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.19",
+    "@vue/cli-plugin-babel": "^4.5.19",
+    "@vue/cli-plugin-eslint": "^4.5.19",
+    "@vue/cli-plugin-router": "^4.5.19",
+    "@vue/cli-plugin-vuex": "^4.5.19",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

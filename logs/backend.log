@@ -1,0 +1,1444 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.ailin:mobile-control >----------------------
+[INFO] Building mobile-control 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.5.5:run (default-cli) > test-compile @ mobile-control >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mobile-control ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mobile-control ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ mobile-control ---
+[INFO] skip non existing resourceDirectory /Users/liuce/ailin-web/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ mobile-control ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:2.5.5:run (default-cli) < test-compile @ mobile-control <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.5.5:run (default-cli) @ mobile-control ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.5)
+
+2025-08-17 10:21:57 [main] INFO  c.a.mobile.MobileControlApplication - Starting MobileControlApplication using Java 11.0.22 on Mac with PID 81889 (/Users/liuce/ailin-web/target/classes started by liuce in /Users/liuce/ailin-web)
+2025-08-17 10:21:57 [main] DEBUG c.a.mobile.MobileControlApplication - Running with Spring Boot v2.5.5, Spring v5.3.10
+2025-08-17 10:21:57 [main] INFO  c.a.mobile.MobileControlApplication - The following profiles are active: dev
+2025-08-17 10:21:57 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 53:13]
+2025-08-17 10:21:57 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 49:13]
+2025-08-17 10:21:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-08-17 10:21:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-17 10:21:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2025-08-17 10:21:58 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-17 10:21:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 303 ms
+2025-08-17 10:21:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-08-17 10:21:58 [main] INFO  c.a.mobile.MobileControlApplication - Started MobileControlApplication in 0.614 seconds (JVM running for 0.742)
+2025-08-17 10:22:09 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-17 10:22:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-17 10:22:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-08-17 10:22:09 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=6f9c9f96-a891-2fb1-93b8-f7a8d1d4f660, remoteAddress=/0:0:0:0:0:0:0:1:54323
+2025-08-17 10:22:09 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 6f9c9f96-a891-2fb1-93b8-f7a8d1d4f660
+2025-08-17 10:22:16 [http-nio-8080-exec-2] INFO  c.a.m.service.NetworkScanService - 更新网络配置: 192.168.31.50-60
+2025-08-17 10:22:16 [http-nio-8080-exec-4] INFO  c.a.m.controller.MobileController - 收到全量扫描网络请求
+2025-08-17 10:22:16 [task-1] INFO  c.a.m.service.NetworkScanService - 开始全量扫描局域网设备...
+2025-08-17 10:22:16 [task-1] DEBUG c.a.m.service.NetworkScanService - 扫描批次: 192.168.31.50 ~ 192.168.31.59
+2025-08-17 10:22:16 [task-1] DEBUG c.a.m.service.NetworkScanService - 开始分批扫描: 192.168.31.50 ~ 192.168.31.59
+2025-08-17 10:22:16 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.50:9801/getscreensize
+2025-08-17 10:22:17 [task-1] DEBUG c.a.m.service.NetworkScanService - 设备 192.168.31.50 HTTP请求超时: I/O error on GET request for "http://192.168.31.50:9801/getscreensize": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+2025-08-17 10:22:17 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.51:9801/getscreensize
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - 设备 192.168.31.51 HTTP请求超时: I/O error on GET request for "http://192.168.31.51:9801/getscreensize": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.52:9801/getscreensize
+2025-08-17 10:22:18 [task-1] INFO  c.a.m.service.NetworkScanService - 设备 192.168.31.52 在线，屏幕尺寸: 1280 720
+2025-08-17 10:22:18 [task-1] INFO  c.a.m.service.NetworkScanService - 添加在线设备: 192.168.31.52 (ID: 1, 屏幕: 1280 720)
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.53:9801/getscreensize
+2025-08-17 10:22:18 [pool-1-thread-1] INFO  c.a.m.service.ScreenCaptureService - 开始连接设备进行屏幕捕获: 192.168.31.52:9802 (ID: 1)
+2025-08-17 10:22:18 [pool-1-thread-1] INFO  c.a.m.service.ScreenCaptureService - 开始接收设备 1 的屏幕数据
+2025-08-17 10:22:18 [task-1] INFO  c.a.m.service.NetworkScanService - 设备 192.168.31.53 在线，屏幕尺寸: 1280 720
+2025-08-17 10:22:18 [task-1] INFO  c.a.m.service.NetworkScanService - 添加在线设备: 192.168.31.53 (ID: 2, 屏幕: 1280 720)
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.54:9801/getscreensize
+2025-08-17 10:22:18 [pool-1-thread-2] INFO  c.a.m.service.ScreenCaptureService - 开始连接设备进行屏幕捕获: 192.168.31.53:9802 (ID: 2)
+2025-08-17 10:22:18 [pool-1-thread-2] INFO  c.a.m.service.ScreenCaptureService - 开始接收设备 2 的屏幕数据
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - 设备 192.168.31.54 HTTP请求超时: I/O error on GET request for "http://192.168.31.54:9801/getscreensize": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.55:9801/getscreensize
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - 设备 192.168.31.55 HTTP请求超时: I/O error on GET request for "http://192.168.31.55:9801/getscreensize": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.56:9801/getscreensize
+2025-08-17 10:22:18 [task-1] INFO  c.a.m.service.NetworkScanService - 设备 192.168.31.56 在线，屏幕尺寸: 1280 720
+2025-08-17 10:22:18 [task-1] INFO  c.a.m.service.NetworkScanService - 添加在线设备: 192.168.31.56 (ID: 3, 屏幕: 1280 720)
+2025-08-17 10:22:18 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.57:9801/getscreensize
+2025-08-17 10:22:18 [pool-1-thread-3] INFO  c.a.m.service.ScreenCaptureService - 开始连接设备进行屏幕捕获: 192.168.31.56:9802 (ID: 3)
+2025-08-17 10:22:18 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=6f9c9f96-a891-2fb1-93b8-f7a8d1d4f660
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:22:18 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=6f9c9f96-a891-2fb1-93b8-f7a8d1d4f660, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:22:18 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 6f9c9f96-a891-2fb1-93b8-f7a8d1d4f660
+2025-08-17 10:22:18 [pool-1-thread-3] INFO  c.a.m.service.ScreenCaptureService - 开始接收设备 3 的屏幕数据
+2025-08-17 10:22:19 [task-1] DEBUG c.a.m.service.NetworkScanService - 设备 192.168.31.57 HTTP请求超时: I/O error on GET request for "http://192.168.31.57:9801/getscreensize": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+2025-08-17 10:22:19 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.58:9801/getscreensize
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - 设备 192.168.31.58 HTTP请求超时: I/O error on GET request for "http://192.168.31.58:9801/getscreensize": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.59:9801/getscreensize
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - 设备 192.168.31.59 HTTP请求超时: I/O error on GET request for "http://192.168.31.59:9801/getscreensize": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - 分批扫描完成，发现 3 个在线设备
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - 扫描批次: 192.168.31.60 ~ 192.168.31.60
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - 开始分批扫描: 192.168.31.60 ~ 192.168.31.60
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - HTTP检测设备: http://192.168.31.60:9801/getscreensize
+2025-08-17 10:22:20 [task-1] INFO  c.a.m.service.NetworkScanService - 设备 192.168.31.60 在线，屏幕尺寸: 1280 720
+2025-08-17 10:22:20 [task-1] INFO  c.a.m.service.NetworkScanService - 添加在线设备: 192.168.31.60 (ID: 4, 屏幕: 1280 720)
+2025-08-17 10:22:20 [task-1] DEBUG c.a.m.service.NetworkScanService - 分批扫描完成，发现 1 个在线设备
+2025-08-17 10:22:20 [pool-1-thread-4] INFO  c.a.m.service.ScreenCaptureService - 开始连接设备进行屏幕捕获: 192.168.31.60:9802 (ID: 4)
+2025-08-17 10:22:20 [pool-1-thread-4] INFO  c.a.m.service.ScreenCaptureService - 开始接收设备 4 的屏幕数据
+2025-08-17 10:22:21 [task-1] INFO  c.a.m.service.NetworkScanService - 全量扫描完成，发现 4 个在线设备
+2025-08-17 10:22:23 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=d87eb2db-ea5d-6f91-bea5-ce8e11258273, remoteAddress=/0:0:0:0:0:0:0:1:54351
+2025-08-17 10:22:23 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: d87eb2db-ea5d-6f91-bea5-ce8e11258273
+2025-08-17 10:22:26 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=d87eb2db-ea5d-6f91-bea5-ce8e11258273
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:22:26 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=d87eb2db-ea5d-6f91-bea5-ce8e11258273, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:22:26 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: d87eb2db-ea5d-6f91-bea5-ce8e11258273
+2025-08-17 10:22:26 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=d87eb2db-ea5d-6f91-bea5-ce8e11258273
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:22:31 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=89adb1e3-881e-487d-561d-6b4a736a4b21, remoteAddress=/0:0:0:0:0:0:0:1:54354
+2025-08-17 10:22:31 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 89adb1e3-881e-487d-561d-6b4a736a4b21
+2025-08-17 10:22:37 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=89adb1e3-881e-487d-561d-6b4a736a4b21
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:22:37 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=89adb1e3-881e-487d-561d-6b4a736a4b21, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:22:37 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 89adb1e3-881e-487d-561d-6b4a736a4b21
+2025-08-17 10:22:37 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=89adb1e3-881e-487d-561d-6b4a736a4b21
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:22:42 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=1d1b77e6-5590-fdf9-8c37-2b5373c3c42a, remoteAddress=/0:0:0:0:0:0:0:1:54360
+2025-08-17 10:22:42 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 1d1b77e6-5590-fdf9-8c37-2b5373c3c42a
+2025-08-17 10:22:43 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 100 帧
+2025-08-17 10:22:44 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 100 帧
+2025-08-17 10:22:45 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 100 帧
+2025-08-17 10:22:47 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 100 帧
+2025-08-17 10:22:47 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=1d1b77e6-5590-fdf9-8c37-2b5373c3c42a
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:22:47 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=1d1b77e6-5590-fdf9-8c37-2b5373c3c42a, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:22:47 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 1d1b77e6-5590-fdf9-8c37-2b5373c3c42a
+2025-08-17 10:22:52 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=9a27d838-7295-b42a-3f09-4bdef8be4548, remoteAddress=/0:0:0:0:0:0:0:1:54367
+2025-08-17 10:22:52 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 9a27d838-7295-b42a-3f09-4bdef8be4548
+2025-08-17 10:22:56 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=9a27d838-7295-b42a-3f09-4bdef8be4548
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:22:56 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=9a27d838-7295-b42a-3f09-4bdef8be4548, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:22:56 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 9a27d838-7295-b42a-3f09-4bdef8be4548
+2025-08-17 10:23:01 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=c185cde4-1552-e9b2-69fb-b6e5b8d01c43, remoteAddress=/0:0:0:0:0:0:0:1:54372
+2025-08-17 10:23:01 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: c185cde4-1552-e9b2-69fb-b6e5b8d01c43
+2025-08-17 10:23:02 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=c185cde4-1552-e9b2-69fb-b6e5b8d01c43
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:02 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=c185cde4-1552-e9b2-69fb-b6e5b8d01c43, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:23:02 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: c185cde4-1552-e9b2-69fb-b6e5b8d01c43
+2025-08-17 10:23:02 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=c185cde4-1552-e9b2-69fb-b6e5b8d01c43
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:07 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=a6a1a308-8bd1-a3a2-dca5-679edb271997, remoteAddress=/0:0:0:0:0:0:0:1:54388
+2025-08-17 10:23:07 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: a6a1a308-8bd1-a3a2-dca5-679edb271997
+2025-08-17 10:23:07 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=a6a1a308-8bd1-a3a2-dca5-679edb271997
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:07 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=a6a1a308-8bd1-a3a2-dca5-679edb271997, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:23:07 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: a6a1a308-8bd1-a3a2-dca5-679edb271997
+2025-08-17 10:23:08 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 200 帧
+2025-08-17 10:23:10 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 200 帧
+2025-08-17 10:23:11 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 200 帧
+2025-08-17 10:23:12 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=825cb28c-7f77-e3e7-2f21-94addecb8873, remoteAddress=/0:0:0:0:0:0:0:1:54391
+2025-08-17 10:23:12 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 825cb28c-7f77-e3e7-2f21-94addecb8873
+2025-08-17 10:23:14 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 200 帧
+2025-08-17 10:23:17 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=825cb28c-7f77-e3e7-2f21-94addecb8873
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:17 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=825cb28c-7f77-e3e7-2f21-94addecb8873, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:23:17 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 825cb28c-7f77-e3e7-2f21-94addecb8873
+2025-08-17 10:23:22 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=c731b437-7cc1-79c9-f203-63dfba23010c, remoteAddress=/0:0:0:0:0:0:0:1:54396
+2025-08-17 10:23:22 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: c731b437-7cc1-79c9-f203-63dfba23010c
+2025-08-17 10:23:29 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=c731b437-7cc1-79c9-f203-63dfba23010c
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:29 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=c731b437-7cc1-79c9-f203-63dfba23010c, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:23:29 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: c731b437-7cc1-79c9-f203-63dfba23010c
+2025-08-17 10:23:32 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 300 帧
+2025-08-17 10:23:34 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=7419c20a-b01c-11dc-287f-91a7444b0656, remoteAddress=/0:0:0:0:0:0:0:1:54409
+2025-08-17 10:23:34 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 7419c20a-b01c-11dc-287f-91a7444b0656
+2025-08-17 10:23:34 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 300 帧
+2025-08-17 10:23:36 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=7419c20a-b01c-11dc-287f-91a7444b0656
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:36 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=7419c20a-b01c-11dc-287f-91a7444b0656
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:36 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=7419c20a-b01c-11dc-287f-91a7444b0656, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:23:36 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 7419c20a-b01c-11dc-287f-91a7444b0656
+2025-08-17 10:23:38 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 300 帧
+2025-08-17 10:23:41 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=aabb7ac8-f2d3-a4aa-f64d-0b80d7da07e3, remoteAddress=/0:0:0:0:0:0:0:1:54411
+2025-08-17 10:23:41 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: aabb7ac8-f2d3-a4aa-f64d-0b80d7da07e3
+2025-08-17 10:23:41 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 300 帧
+2025-08-17 10:23:44 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=aabb7ac8-f2d3-a4aa-f64d-0b80d7da07e3
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:44 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=aabb7ac8-f2d3-a4aa-f64d-0b80d7da07e3, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:23:44 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: aabb7ac8-f2d3-a4aa-f64d-0b80d7da07e3
+2025-08-17 10:23:49 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=7fc93024-055a-7b2c-976c-e5712f0570b4, remoteAddress=/0:0:0:0:0:0:0:1:54414
+2025-08-17 10:23:49 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 7fc93024-055a-7b2c-976c-e5712f0570b4
+2025-08-17 10:23:56 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=7fc93024-055a-7b2c-976c-e5712f0570b4
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:23:56 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=7fc93024-055a-7b2c-976c-e5712f0570b4, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:23:56 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 7fc93024-055a-7b2c-976c-e5712f0570b4
+2025-08-17 10:23:57 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 400 帧
+2025-08-17 10:23:59 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 400 帧
+2025-08-17 10:24:01 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=128f65e7-1e74-04dc-92ca-d815972fec0b, remoteAddress=/0:0:0:0:0:0:0:1:54419
+2025-08-17 10:24:01 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 128f65e7-1e74-04dc-92ca-d815972fec0b
+2025-08-17 10:24:03 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 400 帧
+2025-08-17 10:24:06 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=128f65e7-1e74-04dc-92ca-d815972fec0b
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:06 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=128f65e7-1e74-04dc-92ca-d815972fec0b, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:06 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 128f65e7-1e74-04dc-92ca-d815972fec0b
+2025-08-17 10:24:06 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=128f65e7-1e74-04dc-92ca-d815972fec0b
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:08 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 400 帧
+2025-08-17 10:24:11 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=df129252-a308-1158-2f6c-79f14768e412, remoteAddress=/0:0:0:0:0:0:0:1:54425
+2025-08-17 10:24:11 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: df129252-a308-1158-2f6c-79f14768e412
+2025-08-17 10:24:14 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=df129252-a308-1158-2f6c-79f14768e412
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:14 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=df129252-a308-1158-2f6c-79f14768e412, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:14 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: df129252-a308-1158-2f6c-79f14768e412
+2025-08-17 10:24:14 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=df129252-a308-1158-2f6c-79f14768e412
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:19 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=5456929b-3596-f273-26af-39c9065f8923, remoteAddress=/0:0:0:0:0:0:0:1:54470
+2025-08-17 10:24:19 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 5456929b-3596-f273-26af-39c9065f8923
+2025-08-17 10:24:21 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 500 帧
+2025-08-17 10:24:23 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=5456929b-3596-f273-26af-39c9065f8923
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:23 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=5456929b-3596-f273-26af-39c9065f8923, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:23 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 5456929b-3596-f273-26af-39c9065f8923
+2025-08-17 10:24:24 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 500 帧
+2025-08-17 10:24:28 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=a48b2b05-f096-6c47-9aa6-10c417c436ca, remoteAddress=/0:0:0:0:0:0:0:1:54471
+2025-08-17 10:24:28 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: a48b2b05-f096-6c47-9aa6-10c417c436ca
+2025-08-17 10:24:28 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=a48b2b05-f096-6c47-9aa6-10c417c436ca
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:28 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=a48b2b05-f096-6c47-9aa6-10c417c436ca, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:28 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: a48b2b05-f096-6c47-9aa6-10c417c436ca
+2025-08-17 10:24:28 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=a48b2b05-f096-6c47-9aa6-10c417c436ca
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:29 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 500 帧
+2025-08-17 10:24:33 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=da545f09-f153-427d-45c2-95bf523162a9, remoteAddress=/0:0:0:0:0:0:0:1:54472
+2025-08-17 10:24:33 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: da545f09-f153-427d-45c2-95bf523162a9
+2025-08-17 10:24:33 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=da545f09-f153-427d-45c2-95bf523162a9
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:33 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=da545f09-f153-427d-45c2-95bf523162a9, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:33 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: da545f09-f153-427d-45c2-95bf523162a9
+2025-08-17 10:24:35 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 500 帧
+2025-08-17 10:24:38 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=3060cb30-18ed-cfe2-f334-d31190012d13, remoteAddress=/0:0:0:0:0:0:0:1:54475
+2025-08-17 10:24:38 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 3060cb30-18ed-cfe2-f334-d31190012d13
+2025-08-17 10:24:43 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=3060cb30-18ed-cfe2-f334-d31190012d13
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:43 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=3060cb30-18ed-cfe2-f334-d31190012d13, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:43 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 3060cb30-18ed-cfe2-f334-d31190012d13
+2025-08-17 10:24:46 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 600 帧
+2025-08-17 10:24:48 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=a1f575c5-0e99-c52c-34ce-33044cba31dc, remoteAddress=/0:0:0:0:0:0:0:1:54481
+2025-08-17 10:24:48 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: a1f575c5-0e99-c52c-34ce-33044cba31dc
+2025-08-17 10:24:49 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 600 帧
+2025-08-17 10:24:54 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=a1f575c5-0e99-c52c-34ce-33044cba31dc
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:54 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=a1f575c5-0e99-c52c-34ce-33044cba31dc
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:54 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=a1f575c5-0e99-c52c-34ce-33044cba31dc, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:54 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: a1f575c5-0e99-c52c-34ce-33044cba31dc
+2025-08-17 10:24:55 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 600 帧
+2025-08-17 10:24:59 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=bc495dbc-8961-0861-4c3b-085886eb8bf9, remoteAddress=/0:0:0:0:0:0:0:1:54483
+2025-08-17 10:24:59 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: bc495dbc-8961-0861-4c3b-085886eb8bf9
+2025-08-17 10:24:59 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=bc495dbc-8961-0861-4c3b-085886eb8bf9
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:24:59 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=bc495dbc-8961-0861-4c3b-085886eb8bf9, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:24:59 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: bc495dbc-8961-0861-4c3b-085886eb8bf9
+2025-08-17 10:25:02 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 600 帧
+2025-08-17 10:25:04 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=baa92830-cedf-2b3c-6ee3-6a1ceaa9a362, remoteAddress=/0:0:0:0:0:0:0:1:54488
+2025-08-17 10:25:04 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: baa92830-cedf-2b3c-6ee3-6a1ceaa9a362
+2025-08-17 10:25:05 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=baa92830-cedf-2b3c-6ee3-6a1ceaa9a362
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:05 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=baa92830-cedf-2b3c-6ee3-6a1ceaa9a362, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:25:05 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: baa92830-cedf-2b3c-6ee3-6a1ceaa9a362
+2025-08-17 10:25:10 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=d2d4b725-77bd-2cde-29d3-08763207344c, remoteAddress=/0:0:0:0:0:0:0:1:54491
+2025-08-17 10:25:10 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: d2d4b725-77bd-2cde-29d3-08763207344c
+2025-08-17 10:25:12 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 700 帧
+2025-08-17 10:25:13 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 700 帧
+2025-08-17 10:25:15 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=d2d4b725-77bd-2cde-29d3-08763207344c
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:15 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=d2d4b725-77bd-2cde-29d3-08763207344c, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:25:15 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: d2d4b725-77bd-2cde-29d3-08763207344c
+2025-08-17 10:25:20 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=cc163e32-76fd-4bb6-226b-c9d6c72c96a7, remoteAddress=/0:0:0:0:0:0:0:1:54496
+2025-08-17 10:25:20 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: cc163e32-76fd-4bb6-226b-c9d6c72c96a7
+2025-08-17 10:25:21 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=cc163e32-76fd-4bb6-226b-c9d6c72c96a7
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:21 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=cc163e32-76fd-4bb6-226b-c9d6c72c96a7, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:25:21 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: cc163e32-76fd-4bb6-226b-c9d6c72c96a7
+2025-08-17 10:25:22 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 700 帧
+2025-08-17 10:25:26 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=d4f75bef-5951-67f5-03c6-b59caefcd045, remoteAddress=/0:0:0:0:0:0:0:1:54499
+2025-08-17 10:25:26 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: d4f75bef-5951-67f5-03c6-b59caefcd045
+2025-08-17 10:25:29 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 700 帧
+2025-08-17 10:25:29 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=d4f75bef-5951-67f5-03c6-b59caefcd045
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:29 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=d4f75bef-5951-67f5-03c6-b59caefcd045, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:25:29 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: d4f75bef-5951-67f5-03c6-b59caefcd045
+2025-08-17 10:25:34 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=909583fd-cefe-2a31-b309-1c70a25c879b, remoteAddress=/0:0:0:0:0:0:0:1:54501
+2025-08-17 10:25:34 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 909583fd-cefe-2a31-b309-1c70a25c879b
+2025-08-17 10:25:36 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=909583fd-cefe-2a31-b309-1c70a25c879b
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:36 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=909583fd-cefe-2a31-b309-1c70a25c879b, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:25:36 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 909583fd-cefe-2a31-b309-1c70a25c879b
+2025-08-17 10:25:37 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 800 帧
+2025-08-17 10:25:38 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 800 帧
+2025-08-17 10:25:41 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=74f92005-6a19-3e8d-c717-fabf7c8fddd7, remoteAddress=/0:0:0:0:0:0:0:1:54505
+2025-08-17 10:25:41 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 74f92005-6a19-3e8d-c717-fabf7c8fddd7
+2025-08-17 10:25:46 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=74f92005-6a19-3e8d-c717-fabf7c8fddd7
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:46 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=74f92005-6a19-3e8d-c717-fabf7c8fddd7, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:25:46 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 74f92005-6a19-3e8d-c717-fabf7c8fddd7
+2025-08-17 10:25:48 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 800 帧
+2025-08-17 10:25:51 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=5400c1a4-a514-52ea-3751-7edcdb40105f, remoteAddress=/0:0:0:0:0:0:0:1:54507
+2025-08-17 10:25:51 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 5400c1a4-a514-52ea-3751-7edcdb40105f
+2025-08-17 10:25:52 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=5400c1a4-a514-52ea-3751-7edcdb40105f
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:52 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=5400c1a4-a514-52ea-3751-7edcdb40105f, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:25:52 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 5400c1a4-a514-52ea-3751-7edcdb40105f
+2025-08-17 10:25:52 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=5400c1a4-a514-52ea-3751-7edcdb40105f
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:25:55 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 800 帧
+2025-08-17 10:25:57 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=3aa7064b-29f2-0ac2-5461-24d10027fe37, remoteAddress=/0:0:0:0:0:0:0:1:54511
+2025-08-17 10:25:57 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 3aa7064b-29f2-0ac2-5461-24d10027fe37
+2025-08-17 10:26:00 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=3aa7064b-29f2-0ac2-5461-24d10027fe37
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:00 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=3aa7064b-29f2-0ac2-5461-24d10027fe37, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:26:00 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 3aa7064b-29f2-0ac2-5461-24d10027fe37
+2025-08-17 10:26:00 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=3aa7064b-29f2-0ac2-5461-24d10027fe37
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:01 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 900 帧
+2025-08-17 10:26:05 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=79d1e777-4b90-457a-f943-dfddf95e8f34, remoteAddress=/0:0:0:0:0:0:0:1:54514
+2025-08-17 10:26:05 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 79d1e777-4b90-457a-f943-dfddf95e8f34
+2025-08-17 10:26:05 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 900 帧
+2025-08-17 10:26:08 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=79d1e777-4b90-457a-f943-dfddf95e8f34
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:08 [pool-1-thread-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=79d1e777-4b90-457a-f943-dfddf95e8f34, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:26:08 [pool-1-thread-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 79d1e777-4b90-457a-f943-dfddf95e8f34
+2025-08-17 10:26:13 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=02dca7f6-d9dc-95de-01fb-205801e7f38d, remoteAddress=/0:0:0:0:0:0:0:1:54537
+2025-08-17 10:26:13 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 02dca7f6-d9dc-95de-01fb-205801e7f38d
+2025-08-17 10:26:15 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 900 帧
+2025-08-17 10:26:21 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 900 帧
+2025-08-17 10:26:22 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=02dca7f6-d9dc-95de-01fb-205801e7f38d
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:22 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=02dca7f6-d9dc-95de-01fb-205801e7f38d, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:26:22 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 02dca7f6-d9dc-95de-01fb-205801e7f38d
+2025-08-17 10:26:27 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 1000 帧
+2025-08-17 10:26:28 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=f5919712-16f0-2edc-f8a6-a39426db64f9, remoteAddress=/0:0:0:0:0:0:0:1:54559
+2025-08-17 10:26:28 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: f5919712-16f0-2edc-f8a6-a39426db64f9
+2025-08-17 10:26:28 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=f5919712-16f0-2edc-f8a6-a39426db64f9
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:28 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=f5919712-16f0-2edc-f8a6-a39426db64f9, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:26:28 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: f5919712-16f0-2edc-f8a6-a39426db64f9
+2025-08-17 10:26:30 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 1000 帧
+2025-08-17 10:26:34 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=7b560729-0254-039f-14f7-def82c58aa66, remoteAddress=/0:0:0:0:0:0:0:1:54562
+2025-08-17 10:26:34 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 7b560729-0254-039f-14f7-def82c58aa66
+2025-08-17 10:26:41 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 1000 帧
+2025-08-17 10:26:42 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=7b560729-0254-039f-14f7-def82c58aa66
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:42 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=7b560729-0254-039f-14f7-def82c58aa66, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:26:42 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 7b560729-0254-039f-14f7-def82c58aa66
+2025-08-17 10:26:48 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=d29751f4-ddfb-0b57-6524-5062b1286251, remoteAddress=/0:0:0:0:0:0:0:1:54567
+2025-08-17 10:26:48 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: d29751f4-ddfb-0b57-6524-5062b1286251
+2025-08-17 10:26:49 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 1000 帧
+2025-08-17 10:26:50 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=d29751f4-ddfb-0b57-6524-5062b1286251
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:50 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=d29751f4-ddfb-0b57-6524-5062b1286251, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:26:50 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: d29751f4-ddfb-0b57-6524-5062b1286251
+2025-08-17 10:26:53 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 1100 帧
+2025-08-17 10:26:56 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=a9dfb07b-eeaf-888e-4bec-691191a021df, remoteAddress=/0:0:0:0:0:0:0:1:54568
+2025-08-17 10:26:56 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: a9dfb07b-eeaf-888e-4bec-691191a021df
+2025-08-17 10:26:57 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 1100 帧
+2025-08-17 10:26:58 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=a9dfb07b-eeaf-888e-4bec-691191a021df
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:26:58 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=a9dfb07b-eeaf-888e-4bec-691191a021df, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:26:58 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: a9dfb07b-eeaf-888e-4bec-691191a021df
+2025-08-17 10:27:04 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=ad14f64a-80f1-f46d-293e-65498b4a4fa1, remoteAddress=/0:0:0:0:0:0:0:1:54569
+2025-08-17 10:27:04 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: ad14f64a-80f1-f46d-293e-65498b4a4fa1
+2025-08-17 10:27:05 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=ad14f64a-80f1-f46d-293e-65498b4a4fa1
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:27:05 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=ad14f64a-80f1-f46d-293e-65498b4a4fa1, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:27:05 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: ad14f64a-80f1-f46d-293e-65498b4a4fa1
+2025-08-17 10:27:08 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 1100 帧
+2025-08-17 10:27:11 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=63c168d9-2c9b-982c-5790-82e4244c3750, remoteAddress=/0:0:0:0:0:0:0:1:54574
+2025-08-17 10:27:11 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 63c168d9-2c9b-982c-5790-82e4244c3750
+2025-08-17 10:27:12 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=63c168d9-2c9b-982c-5790-82e4244c3750
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:27:12 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=63c168d9-2c9b-982c-5790-82e4244c3750, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:27:12 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 63c168d9-2c9b-982c-5790-82e4244c3750
+2025-08-17 10:27:15 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 1100 帧
+2025-08-17 10:27:35 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=38746451-5ec1-4b5d-5c10-d770cba3a7ef, remoteAddress=/0:0:0:0:0:0:0:1:54581
+2025-08-17 10:27:35 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 38746451-5ec1-4b5d-5c10-d770cba3a7ef
+2025-08-17 10:27:43 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=38746451-5ec1-4b5d-5c10-d770cba3a7ef
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:27:43 [pool-1-thread-2] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=38746451-5ec1-4b5d-5c10-d770cba3a7ef, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:27:43 [pool-1-thread-2] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 38746451-5ec1-4b5d-5c10-d770cba3a7ef
+2025-08-17 10:27:43 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 1200 帧
+2025-08-17 10:27:43 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 1200 帧
+2025-08-17 10:27:43 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 1200 帧
+2025-08-17 10:27:43 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 1200 帧
+2025-08-17 10:27:46 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 1300 帧
+2025-08-17 10:27:48 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=d58ce307-1197-79aa-5d22-c0b33da58fa2, remoteAddress=/0:0:0:0:0:0:0:1:54605
+2025-08-17 10:27:48 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: d58ce307-1197-79aa-5d22-c0b33da58fa2
+2025-08-17 10:27:51 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=d58ce307-1197-79aa-5d22-c0b33da58fa2
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:27:51 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=d58ce307-1197-79aa-5d22-c0b33da58fa2, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:27:51 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: d58ce307-1197-79aa-5d22-c0b33da58fa2
+2025-08-17 10:27:51 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=d58ce307-1197-79aa-5d22-c0b33da58fa2
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:27:54 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 1300 帧
+2025-08-17 10:27:57 [http-nio-8080-exec-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=b80a5945-dc5a-e6d2-cfe3-ca142a58f0c4, remoteAddress=/0:0:0:0:0:0:0:1:54607
+2025-08-17 10:27:57 [http-nio-8080-exec-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: b80a5945-dc5a-e6d2-cfe3-ca142a58f0c4
+2025-08-17 10:27:57 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=b80a5945-dc5a-e6d2-cfe3-ca142a58f0c4
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:27:57 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=b80a5945-dc5a-e6d2-cfe3-ca142a58f0c4, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:27:57 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: b80a5945-dc5a-e6d2-cfe3-ca142a58f0c4
+2025-08-17 10:27:57 [pool-1-thread-3] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=b80a5945-dc5a-e6d2-cfe3-ca142a58f0c4
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:28:01 [pool-1-thread-3] DEBUG c.a.m.service.ScreenCaptureService - 设备 3 已捕获 1300 帧
+2025-08-17 10:28:03 [http-nio-8080-exec-3] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=003140bd-3290-787e-73a5-84c3189d2158, remoteAddress=/0:0:0:0:0:0:0:1:54612
+2025-08-17 10:28:03 [http-nio-8080-exec-3] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 003140bd-3290-787e-73a5-84c3189d2158
+2025-08-17 10:28:07 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=003140bd-3290-787e-73a5-84c3189d2158
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:28:07 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=003140bd-3290-787e-73a5-84c3189d2158, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:28:07 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 003140bd-3290-787e-73a5-84c3189d2158
+2025-08-17 10:28:09 [pool-1-thread-4] DEBUG c.a.m.service.ScreenCaptureService - 设备 4 已捕获 1300 帧
+2025-08-17 10:28:12 [pool-1-thread-1] DEBUG c.a.m.service.ScreenCaptureService - 设备 1 已捕获 1400 帧
+2025-08-17 10:28:12 [http-nio-8080-exec-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=8713e280-e508-867f-8490-84f9883c4a2f, remoteAddress=/0:0:0:0:0:0:0:1:54619
+2025-08-17 10:28:12 [http-nio-8080-exec-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 8713e280-e508-867f-8490-84f9883c4a2f
+2025-08-17 10:28:14 [pool-1-thread-1] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=8713e280-e508-867f-8490-84f9883c4a2f
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:28:14 [pool-1-thread-1] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=8713e280-e508-867f-8490-84f9883c4a2f, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:28:14 [pool-1-thread-1] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 8713e280-e508-867f-8490-84f9883c4a2f
+2025-08-17 10:28:19 [http-nio-8080-exec-7] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=35613ef9-ec82-29be-29eb-4d82564427c7, remoteAddress=/0:0:0:0:0:0:0:1:54622
+2025-08-17 10:28:19 [http-nio-8080-exec-7] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 35613ef9-ec82-29be-29eb-4d82564427c7
+2025-08-17 10:28:20 [pool-1-thread-4] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=35613ef9-ec82-29be-29eb-4d82564427c7
+java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_WRITING] which is an invalid state for called method
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.checkState(WsRemoteEndpointImplBase.java:1274)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine.textPartialStart(WsRemoteEndpointImplBase.java:1231)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:28:20 [pool-1-thread-4] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=35613ef9-ec82-29be-29eb-4d82564427c7, closeStatus=CloseStatus[code=1000, reason=null]
+2025-08-17 10:28:20 [pool-1-thread-4] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 35613ef9-ec82-29be-29eb-4d82564427c7
+2025-08-17 10:28:20 [pool-1-thread-2] ERROR c.a.mobile.service.WebSocketService - 广播消息失败: sessionId=35613ef9-ec82-29be-29eb-4d82564427c7
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:442)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:254)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:227)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ailin.mobile.service.WebSocketService.lambda$broadcastMessage$0(WebSocketService.java:152)
+	at java.base/java.util.concurrent.ConcurrentHashMap.removeEntryIf(ConcurrentHashMap.java:1640)
+	at java.base/java.util.concurrent.ConcurrentHashMap$EntrySetView.removeIf(ConcurrentHashMap.java:4826)
+	at com.ailin.mobile.service.WebSocketService.broadcastMessage(WebSocketService.java:142)
+	at com.ailin.mobile.service.WebSocketService.sendFrame(WebSocketService.java:79)
+	at com.ailin.mobile.service.ScreenCaptureService.captureFrames(ScreenCaptureService.java:131)
+	at com.ailin.mobile.service.ScreenCaptureService.lambda$startCapture$0(ScreenCaptureService.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-08-17 10:28:21 [pool-1-thread-2] DEBUG c.a.m.service.ScreenCaptureService - 设备 2 已捕获 1400 帧
+2025-08-17 10:33:16 [http-nio-8080-exec-9] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接建立: sessionId=93ff05b5-65de-2dd8-30b0-ad686557211f, remoteAddress=/0:0:0:0:0:0:0:1:54666
+2025-08-17 10:33:16 [http-nio-8080-exec-9] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已连接: 93ff05b5-65de-2dd8-30b0-ad686557211f
+2025-08-17 10:33:42 [pool-1-thread-1] ERROR c.a.m.service.ScreenCaptureService - 设备 1 读取数据失败: Read timed out
+2025-08-17 10:33:42 [pool-1-thread-1] ERROR c.a.m.service.ScreenCaptureService - 设备 1 屏幕捕获异常: Read timed out
+2025-08-17 10:33:42 [pool-1-thread-1] INFO  c.a.m.service.ScreenCaptureService - 设备 1 屏幕捕获已停止
+2025-08-17 10:33:42 [pool-1-thread-2] ERROR c.a.m.service.ScreenCaptureService - 设备 2 读取数据失败: Read timed out
+2025-08-17 10:33:42 [pool-1-thread-2] ERROR c.a.m.service.ScreenCaptureService - 设备 2 屏幕捕获异常: Read timed out
+2025-08-17 10:33:42 [pool-1-thread-2] INFO  c.a.m.service.ScreenCaptureService - 设备 2 屏幕捕获已停止
+2025-08-17 10:33:42 [pool-1-thread-4] ERROR c.a.m.service.ScreenCaptureService - 设备 4 读取数据失败: Read timed out
+2025-08-17 10:33:42 [pool-1-thread-4] ERROR c.a.m.service.ScreenCaptureService - 设备 4 屏幕捕获异常: Read timed out
+2025-08-17 10:33:42 [pool-1-thread-4] INFO  c.a.m.service.ScreenCaptureService - 设备 4 屏幕捕获已停止
+2025-08-17 10:33:43 [pool-1-thread-3] ERROR c.a.m.service.ScreenCaptureService - 设备 3 读取数据失败: Read timed out
+2025-08-17 10:33:43 [pool-1-thread-3] ERROR c.a.m.service.ScreenCaptureService - 设备 3 屏幕捕获异常: Read timed out
+2025-08-17 10:33:43 [pool-1-thread-3] INFO  c.a.m.service.ScreenCaptureService - 设备 3 屏幕捕获已停止
+2025-08-17 10:39:16 [http-nio-8080-exec-10] INFO  c.a.m.handler.ScreenWebSocketHandler - WebSocket连接关闭: sessionId=93ff05b5-65de-2dd8-30b0-ad686557211f, closeStatus=CloseStatus[code=1001, reason=null]
+2025-08-17 10:39:16 [http-nio-8080-exec-10] INFO  c.a.mobile.service.WebSocketService - WebSocket会话已断开: 93ff05b5-65de-2dd8-30b0-ad686557211f

@@ -1,0 +1,58 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: mobile-control
+  profiles:
+    active: dev
+
+# 自定义配置
+mobile:
+  network:
+    # 默认扫描的IP网段
+    base-ip: 192.168.31
+    # IP范围 0-255
+    start-range: 0
+    end-range: 255
+    # HTTP检测端口
+    detect-port: 9801
+    # 投屏数据端口
+    stream-port: 9802
+    # 连接超时时间(毫秒)
+    connect-timeout: 2000
+    # HTTP请求超时时间(毫秒)
+    http-timeout: 1000
+    # 最大显示窗口数
+    max-windows: 20
+    # 分批扫描大小
+    batch-size: 10
+  
+  websocket:
+    # WebSocket端点
+    endpoint: /ws/screen
+    # 允许跨域
+    allowed-origins: "*"
+
+# 日志配置
+logging:
+  level:
+    com.ailin: DEBUG
+    org.springframework.web: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+---
+spring:
+  profiles: dev
+
+---
+spring:
+  profiles: prod
+  
+logging:
+  level:
+    com.ailin: INFO
+    root: WARN

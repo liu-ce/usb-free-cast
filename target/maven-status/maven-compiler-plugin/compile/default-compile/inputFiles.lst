@@ -1,0 +1,9 @@
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/controller/MobileController.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/handler/ScreenWebSocketHandler.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/model/DeviceInfo.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/MobileControlApplication.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/service/NetworkScanService.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/service/ScreenCaptureService.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/service/WebSocketService.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/config/WebSocketConfig.java
+/Users/liuce/ailin-web/src/main/java/com/ailin/mobile/config/MobileConfig.java
